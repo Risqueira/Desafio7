@@ -1,12 +1,9 @@
 # Desafio7
 # Questao 1
 ```java
-
 package desafio7;
 
 import java.util.Scanner;
-
-
 
 /**
  *
@@ -15,17 +12,18 @@ import java.util.Scanner;
 public class Desafio7 {
 
     public static void main(String[] args) {
-
-        Tabuada(10);
-    }
-    public static void Tabuada(int fim){
-        int i = 1;
         int n;
-        Scanner ler=new Scanner(System.in);
+        Scanner ler = new Scanner(System.in);
         System.out.println("Digite um numero:");
-        n=ler.nextInt();
-        while(i<=fim){
-            System.out.println(n + " x " + i + " = " + (n * i));
+        n = ler.nextInt();
+        Tabuada(n);
+    }
+
+    public static void Tabuada(int x) {
+        int i = 1;
+        int fim = 10;
+        while (i <= fim) {
+            System.out.println(x + " x " + i + " = " + (x * i));
             i++;
         }
     }
