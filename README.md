@@ -6,7 +6,9 @@ package desafio7;
 import java.util.Scanner;
 
 /**
- *
+ *1. Algoritmo para imprimir a tabuada de um número o método recebe
+por parâmetro apenas um numero inteiro que é a tabuada que você
+quer resolver
  * @author henrique
  */
 public class Desafio7 {
