@@ -63,3 +63,37 @@ public class Desafio7 {
     }
 }
 ```
+# Questao 3
+```java
+package desafio7;
+
+import java.util.Scanner;
+
+/**
+ * 3. Algoritmo que recebe duas strings e verifica e imprime se “são iguais”
+ *
+ * @author henrique
+ */
+public class Desafio7 {
+
+    public static void main(String[] args) {
+        Scanner ler = new Scanner(System.in);
+        String s1, s2;
+        System.out.println("Digite uma palavra:");
+        s1 = ler.nextLine();
+        System.out.println("Digite uma palavra:");
+        s2 = ler.nextLine();
+        Compara(s1, s2);
+
+    }
+
+    public static void Compara(String x, String y) {
+        if (x.equals(y)) {
+            System.out.println("Sao iguais");
+        } else {
+            System.out.println("Nao sao iguais");
+        }
+
+    }
+}
+```
