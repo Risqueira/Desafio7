@@ -129,3 +129,43 @@ public class Desafio7 {
     }
 }
 ```
+#questao 5
+```java
+package desafio7;
+
+import java.util.Scanner;
+import javax.swing.JOptionPane;
+
+/**
+ * 5. Crie um método que recebe por parâmetro duas strings e retorna um tipo
+ * String com as seguintes resposta: “Os nomes são iguais” ou “Os nomes não são
+ * iguais”
+ *
+ * @author henrique
+ */
+public class Desafio7 {
+
+    public static void main(String[] args) {
+        Scanner ler = new Scanner(System.in);
+        String s1, s2;
+        System.out.println("Digite uma palavra:");
+        s1 = ler.nextLine();
+        System.out.println("Digite uma palavra:");
+        s2 = ler.nextLine();
+        imprimirTexto(Compara(s1, s2));
+
+    }
+
+    public static String Compara(String x, String y) {
+        String resp="Os nomes nao são iguais";
+        if (x.equals(y)) {
+            resp="Os nomes sao iguais";
+        }
+        return resp;
+    }
+    public static void imprimirTexto(String texto) {
+        JOptionPane.showMessageDialog(null, texto);
+    }
+}
+
+```
