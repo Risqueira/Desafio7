@@ -97,3 +97,35 @@ public class Desafio7 {
     }
 }
 ```
+# questao 4
+```java
+package desafio7;
+
+import java.util.Scanner;
+
+/**
+ * 4. Algoritmo que recebe dois números inteiros e imprime o menor deles
+ *
+ * @author henrique
+ */
+public class Desafio7 {
+
+    public static void main(String[] args) {
+        Scanner ler = new Scanner(System.in);
+        int n1, n2;
+        System.out.println("Digite o primeiro valor:");
+        n1 = ler.nextInt();
+        System.out.println("Digite o segundo valor:");
+        n2 = ler.nextInt();
+        NumerosInteiros(n1, n2);
+    }
+
+    public static void NumerosInteiros(int n1, int n2) {
+        if (n1 < n2) {
+            System.out.println("Primeiro valor e menor:" + n1);
+        } else {
+            System.out.println("Segundo valor e menor:" + n2);
+        }
+    }
+}
+```
