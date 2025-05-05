@@ -234,3 +234,39 @@ public class Desafio7 {
 }
 
 ```
+# questao 8
+```java
+package desafio7;
+
+import java.util.Scanner;
+
+/**
+ * 8. Crie um método que receba 3 notas e retorne a média ponderada, sabe-se que
+ * cada nota tem os respectivos pesos: nota 1 peso 3 - nota 2 peso 3 e nota 3
+ * peso 4 (double) .
+ *
+ * @author Henrique
+ */
+public class Desafio7 {
+
+    public static void main(String[] args) {
+        Scanner ler = new Scanner(System.in);
+        double nota1, nota2, nota3;
+        System.out.println("Digite a primeira nota:");
+        nota1 = ler.nextDouble();
+        System.out.println("Digite a segunda nota:");
+        nota2 = ler.nextDouble();
+        System.out.println("Digite a terceira nota:");
+        nota3 = ler.nextDouble();
+        mediaPonderada(nota1, nota2, nota3);
+
+    }
+
+    public static double mediaPonderada(double n1, double n2, double n3) {
+        double mediaP = (n1 * 3 + n2 * 3 + n3 * 4) / 10;
+        System.out.println("Sua média ponderada é:" + mediaP);
+        return mediaP;
+    }
+
+}
+```
