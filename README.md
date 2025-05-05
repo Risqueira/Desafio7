@@ -200,3 +200,37 @@ public class Desafio7 {
 
 }
 ```
+# Questao 7
+```java
+package desafio7;
+
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+/**
+ * 7. Crie um método para calcular a área de um círculo – o usuário envia por
+ * parâmetro o seu raio e retorna o seu resultado (double) – Formula: PI.raio²
+ *
+ * @author Henrique
+ */
+public class Desafio7 {
+
+    public static void main(String[] args) {
+        Scanner ler = new Scanner(System.in);
+        double raio;
+        System.out.println("Digite o raio do círculo:");
+        raio = ler.nextDouble();
+        areaCirculo(raio);
+
+    }
+
+    public static double areaCirculo(double r) {
+        DecimalFormat df = new DecimalFormat("0.00");
+        double areaC = Math.PI * (Math.pow(r, 2));
+        System.out.println("A área do círculo é:" + df.format(areaC));
+        return areaC;
+    }
+
+}
+
+```
