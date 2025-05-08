@@ -220,14 +220,13 @@ public class Desafio7 {
         double raio;
         System.out.println("Digite o raio do círculo:");
         raio = ler.nextDouble();
-        areaCirculo(raio);
+        System.out.println("A area do circulo é:"+areaCirculo(raio));
 
     }
 
     public static double areaCirculo(double r) {
         DecimalFormat df = new DecimalFormat("0.00");
         double areaC = Math.PI * (Math.pow(r, 2));
-        System.out.println("A área do círculo é:" + df.format(areaC));
         return areaC;
     }
 
@@ -258,13 +257,12 @@ public class Desafio7 {
         nota2 = ler.nextDouble();
         System.out.println("Digite a terceira nota:");
         nota3 = ler.nextDouble();
-        mediaPonderada(nota1, nota2, nota3);
+        System.out.println("Sua média ponderada é:"+mediaPonderada(nota1, nota2, nota3));
 
     }
 
     public static double mediaPonderada(double n1, double n2, double n3) {
         double mediaP = (n1 * 3 + n2 * 3 + n3 * 4) / 10;
-        System.out.println("Sua média ponderada é:" + mediaP);
         return mediaP;
     }
 
