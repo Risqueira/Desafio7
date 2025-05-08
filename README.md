@@ -189,16 +189,16 @@ public class Desafio7 {
         double celsius, formulaF;
         System.out.println("Digite um valor:");
         celsius = ler.nextDouble();
-        conversor(celsius);
+        System.out.println("A temperatura de Celsius convertida para Fahrenheit é:"+conversor(celsius));
     }
 
     public static double conversor(double c) {
         double formulaF = (c * 1.8) + 32;
-        System.out.println("A temperatura de Celsius para Fahrenheit:" + formulaF + "°F");
         return formulaF;
     }
 
 }
+
 ```
 # Questao 7
 ```java
