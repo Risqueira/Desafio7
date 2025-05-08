@@ -217,15 +217,15 @@ public class Desafio7 {
 
     public static void main(String[] args) {
         Scanner ler = new Scanner(System.in);
+        DecimalFormat df = new DecimalFormat("0.00");
         double raio;
         System.out.println("Digite o raio do círculo:");
         raio = ler.nextDouble();
-        System.out.println("A area do circulo é:"+areaCirculo(raio));
+        System.out.println("A area do circulo é:"+df.format(areaCirculo(raio)));
 
     }
 
     public static double areaCirculo(double r) {
-        DecimalFormat df = new DecimalFormat("0.00");
         double areaC = Math.PI * (Math.pow(r, 2));
         return areaC;
     }
